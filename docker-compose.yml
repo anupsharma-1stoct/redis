@@ -1,0 +1,16 @@
+services:
+  app:
+    build: .
+    container_name: redis-ts-app
+    volumes:
+      - .:/app
+    depends_on:
+      - redis
+    ports:
+      - "3000:3000"
+  
+  redis:
+    image: redis:8.2.2-alpine
+    container_name: redis-server
+    ports:
+      - "6379:6379"
