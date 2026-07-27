@@ -7,7 +7,7 @@ services:
     depends_on:
       - redis
     ports:
-      - "3000:3000"
+      - "4000:4000"
   
   redis:
     image: redis:8.2.2-alpine

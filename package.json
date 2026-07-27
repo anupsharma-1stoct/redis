@@ -6,10 +6,11 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon -L --watch src --ext ts --exec ts-node ./src/index.ts",
-    "redis": "nodemon --exec ts-node ./src/redis.ts",
-    "redis_two": "nodemon --exec ts-node ./src/redis_two.ts",
-    "redis_three": "nodemon --exec ts-node ./src/redis_three.ts",
-    "redis_four": "nodemon --exec ts-node ./src/redis_four.ts",
+    "redis": "nodemon --exec ts-node ./src/controllers/redis.ts",
+    "redis_two": "nodemon --exec ts-node ./src/controllers/redis_two.ts",
+    "redis_three": "nodemon --exec ts-node ./src/controllers/redis_three.ts",
+    "redis_four": "nodemon --exec ts-node ./src/controllers/redis_four.ts",
+    "email_queue": "nodemon --exec ts-node ./src/controllers/email_queue.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
