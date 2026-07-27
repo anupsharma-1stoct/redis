@@ -40,8 +40,7 @@ app.post("/email", async(req:any, res:any)=>{
 
     console.log("Result:", result);
     
-
-    if (result) {
+    if (result && !isNaN(result)) {
         return res.status(200).json({queue: true, job});
     }
 
